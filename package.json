@@ -1,0 +1,11 @@
+{
+  "name": "nexus-pm",
+  "scripts": {
+    "install-all": "npm i && npm i --prefix server && npm i --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": { "concurrently": "^8.2.2" }
+}
